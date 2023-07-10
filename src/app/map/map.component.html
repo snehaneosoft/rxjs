@@ -1,0 +1,29 @@
+<section>
+  <div class="container">
+    <p class="h6 text-secondary">Map</p>
+    <div class="row">
+      <div class="col-sm-12 mt-3">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>name</th>
+              <th>episode</th>
+              <th>created</th>
+              <th>url</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let i of record">
+              <td>{{ i.id }}</td>
+              <td>{{ i.name }}</td>
+              <td>{{ i.episode }}</td>
+              <td>{{ i.created }}</td>
+              <td>{{ i.url }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

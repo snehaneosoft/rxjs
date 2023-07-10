@@ -1,0 +1,39 @@
+<section>
+  <div class="container">
+    <p class="h6 text-secondary">Subject</p>
+    <p class="text-secondary"> Subject is like an observable , which can have multiple observer,when value is emitted, subscribers will receives the value.</p>
+    <!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Subject
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                Subject is like an observable , which can have multiple observer,when value is emitted, subscribers will receives the value.
+            </div>
+          </div>
+        </div>
+    </div> -->
+   
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="d-flex">
+          <input type="text" class="form-control" #typeField />
+          <button
+            type="button"
+            class="btn btn-secondary ms-2"
+            (click)="register(typeField.value)"
+          >
+            click
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <app-comp2></app-comp2>
+    </div>
+  </div>
+</section>

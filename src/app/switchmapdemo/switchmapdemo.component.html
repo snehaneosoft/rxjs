@@ -1,0 +1,35 @@
+<section>
+  <div class="container">
+    <form [formGroup]="qf">
+      <p class="h6 text-secondary">Switch Map</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control mb-2"
+            placeholder="search here..."
+            formControlName="searchfrm"
+          />
+        </div>
+        <div class="col-sm-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>userId</th>
+                <th>title</th>
+                <th>completed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of record">
+                <td>{{ i.id }}</td>
+                <td>{{ i.title }}</td>
+                <td>{{ i.completed }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
